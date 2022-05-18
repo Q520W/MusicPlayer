@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Music Player</title>
+		<link rel="stylesheet" href="style.css">
+		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" />
+        <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<audio src="" id="audio-source"></audio>
+		<!-- home section -->
+		<section class="home-section active">
+			<!-- carousel -->
+			<div class="carousel">
+				<img src="assets/download-1.jpg" class="active" alt="">
+				<img src="assets/download2.jpg" alt="">
+				<img src="assets/download3.jpg" alt="">
+				<img src="assets/download4.jpg" alt="">
+				<img src="assets/download.jpg" alt="">
+				
+			</div>
+			<h1 class="heading">Recently played</h1>
+				<div class="playlists-group">
+					<div class="playlist-card">
+						<img src="assets/download4.jpg" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">No Name</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/download3.jpg" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">Yep</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/download2.jpg" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">Chinese Music</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/download-1.jpg" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">Blues</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/download.jpg" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">Guess</p>
+					</div>
+				</div>
+				
+			
+			</section>
+			<section class="music-player-section">
+				<img src="assets/back.png" class="back-btn icon hide" alt="">
+				<img src="assets/nav.png" class="nav-btn icon hide" alt="">
+				<h1 class="current-song-name">song 1</h1>
+				<p class="artist-name hide">1</p>
+				<img src="assets/cover-1.jpg" class="cover hide" alt="">
+				<div class="seek-bar-container">
+					<input type="range" class="music-seek-bar" value="0">
+					<p class="current-time hide">00 : 00</p>
+					<p class="duration hide">00 : 00</p>
+				</div>
+				<div class="controls">
+					<span class="fas fa-redo"></span>
+					<div class="main">
+						<i class="fas fa-backward active"></i>
+						<i class="fas fa-play active"></i>
+						<i class="fas fa-pause"></i>
+						<i class="fas fa-forward active"></i>
+					</div>
+					<input type="range" class="volume-slider" max="1" value="1" step="0.1">
+					<span class="fas fa-volume-up"></span>
+				</div>
+			</section>
+			<section class="playlist">
+				<img src="assets/back.png" class="back-btn icon" alt="">
+				<h1 class="title">playlist</h1>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assetscover-1.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">Ghost</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download2.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">Mood</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download3.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">Love Is Gone</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download4.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">That Girl</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">Pubg</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download-1.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">Handclap</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download2.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">Get Ready To Fight</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download3.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">大鱼</p>
+				</div>
+                <div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download4.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">孤城</p>
+				</div>
+                <div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/download.jpg" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">Old Town Road</p>
+				</div>
+                
+			</section>
+		<script src="scripts/data.js"></script>
+		<script src="scripts/app.js"></script>
+	</body>
+</html>
+
+	
